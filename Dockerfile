@@ -1,4 +1,6 @@
-FROM openjdk:14-jdk-alpine
-ARG JAR_FILE=target/*.jar
+FROM openjdk:14.0.1-jdk
+VOLUME /tmp
+EXPOSE 8080
+ARG JAR_FILE=/target/*.jar
 COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
