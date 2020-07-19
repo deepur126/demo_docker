@@ -1,5 +1,4 @@
-FROM openjdk:14.0.1-jdk
-VOLUME /tmp
+FROM winamd64/openjdk:14-jdk-nanoserver
 EXPOSE 8080
 ARG JAR_FILE=/target/*.jar
 COPY ${JAR_FILE} app.jar
