@@ -46,13 +46,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.spotify/dockerfile-maven-plugin -->
-		<dependency>
-			<groupId>com.spotify</groupId>
-			<artifactId>dockerfile-maven-plugin</artifactId>
-			<version>1.4.10</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
